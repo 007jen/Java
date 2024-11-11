@@ -1,0 +1,124 @@
+import java.util.Scanner;
+public class conditionedstatements
+{
+    public static void main(String args[])
+    {
+        Scanner scr=new Scanner(System.in);
+        int age;
+        System.out.println("enter the age");
+        age=scr.nextInt();
+        if (age<18)
+        {
+            System.out.println("under age");
+        }
+        else
+        {
+            System.out.println("above age ");
+        }
+
+        int marks;
+        System.out.println("Enter the marks:\t1");
+        marks=scr.nextInt();
+        if (marks>0 && marks<35)
+        {
+            System.out.println("fail");
+        }
+        else if (marks>35 && marks<50)
+        {
+            System.out.println("passed");
+        }
+        else if (marks>50 && marks<72)
+        {
+            System.out.println("first class");
+        }
+        else if (marks>75 && marks<100)
+        {
+            System.out.println("toped");
+        }
+
+        else
+        {
+            System.out.println("enter valid marks");
+        }
+
+        int num;
+        System.out.println("Enter the num:\t");
+        num=scr.nextInt();
+
+        if (num>=0 && num<=100)
+        {
+            if (num>=25 && num<=75)
+            {
+               if (num>=45 && num<=55)
+               {
+                   System.out.println("num is between 45 and 55");
+               }
+               else
+               {
+                   System.out.println("num us not between 45 and 55");
+               }
+            }
+            else
+            {
+                System.out.println("num is not between 25 and 75");
+            }
+        }
+        else
+        {
+            System.out.println("num is not between 0 and 100");
+        }
+
+        char letter;
+        System.out.println("enter the letter");
+        letter=scr.next().charAt(0);
+
+        switch (letter)
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println("Its a vowel ");
+                break;
+            default:
+                System.out.println("Its a cosonant");
+        }
+
+       
+        #switch with choices 
+        int n,n1,choice;
+
+        System.out.println("\nEnter the num1");
+        n=scr.nextInt();
+
+        System.out.println("\nEnter the num2");
+        n1=scr.nextInt();
+
+        System.out.println("\nEnter the choice");
+        choice=scr.nextInt();
+
+        switch (choice)
+        {
+            case 1:
+                System.out.println("Addtion of 2 nums"+(n+n1));
+                break;
+            case 2:
+                System.out.println("subtraction of 2 nums"+(n-n1));
+                break;
+            case 3:
+                System.out.println("multiplication of 2 nums"+(n*n1));
+                break;
+            case 4:
+                System.out.println("division of 2 nums"+(n/n1));
+                break;
+            case 5:
+                System.out.println("remainder of 2 nums"+(n%n1));
+                break;
+
+            default:
+                System.out.println("enter the valid choice");
+        }
+
+    }
+}
