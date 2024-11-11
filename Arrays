@@ -1,0 +1,60 @@
+
+#ARRAYS 
+
+import  java.util.Scanner;
+
+class arrays
+{
+    public  static void main(String args[])
+    {
+        int i,j;
+        Scanner scr=new Scanner(System.in);
+        int[][]myarr=new int[2][3];
+
+        for (i=0;i<2;i++)
+        {
+            for (j=0;j<3;j++)
+            {
+                myarr[i][j] = scr.nextInt();
+            }
+        }
+        for (i=0;i<2;i++)
+        {
+            for (j=0;j<3;j++)
+            {
+                System.out.print(myarr[i][j]+"\t");
+            }
+            System.out.println(1);
+        }
+
+       
+       //3D ARRAY 
+        int k;
+        int[][][]arr=new int[2][2][2];
+
+        for (i=0;i<2;i++)
+        {
+            for (j=0;j<2;j++)
+            {
+                for (k=0;k<2;k++)
+                {
+                    arr[i][j][k] = scr.nextInt();
+                }
+            }
+        }
+
+        for (i=0;i<2;i++)
+        {
+            for (j=0;j<2;j++)
+            {
+                for (k=0;k<2;k++)
+                {
+                  System.out.println( i+","+j+","+k+"="+arr[i][j][k]+"\t");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
+    }
+}
