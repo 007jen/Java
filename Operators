@@ -1,0 +1,81 @@
+
+# operators 
+
+
+import java.util.Scanner;// here Scanner is a class in util package which is used to take the input from the user at run time
+public class operators
+{
+    public  static  void main(String args[])
+    {
+        Scanner scr=new Scanner(System.in);
+
+        int a,b;
+        int marks;
+
+        System.out.println("enter a");
+        a=scr.nextInt();
+        System.out.println("enter b");
+        b=scr.nextInt();
+
+        System.out.println("Airthmetic operators");
+        System.out.println("addition"+(a+b));
+        System.out.println("subtraction"+(a-b));
+        System.out.println("multiplication"+(a*b));
+        System.out.println("division"+(a/b));
+        System.out.println("remainder"+(a%b));
+
+        System.out.println("\nRelational operator");
+        System.out.println(a>b);
+        System.out.println(a<b);
+        System.out.println(a<=b);
+        System.out.println(a>=b);
+        System.out.println(a!=b);
+        System.out.println(a=b);
+
+        System.out.println("\n\nenter the marks:\t");
+        marks=scr.nextInt();
+
+        if (marks>0 && marks<35)
+        {
+            System.out.println("fail");
+        }
+
+        if (marks>35 && marks<100)
+        {
+            System.out.println("pass");
+        }
+
+        if (marks<0 && marks>100)
+        {
+            System.out.println("enter valid num");
+        }
+
+        System.out.println("\n\nassignment operator");
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a+=b;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a-=b;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a/=b;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a*=b;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a%=b;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+
+
+        System.out.println("\n\nunary operator");
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a=b++;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a=b--;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a=++b;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+        a=--b;
+        System.out.println("value of a is"+a+ "valur of b is"+b);
+
+
+
+    }
+}
